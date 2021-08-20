@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Personalization">
+  <test  name="Test">
+  
+  <!-- <parameter name="browser" value="chrome"/> -->
+  <parameter name="url" value="https://www.mid-day.com/Resources/midday/rss/netcore-web-series.xml"/> 
+  
+  
+    <classes>
+      <class name="com.Personalisation.TestCase.HomePage_TC">
+      		<methods>
+      		<include name="verifyMissingTagsInXML"></include>
+     		</methods> 
+      </class>	
+    </classes>	
+  </test> 
+  </suite>

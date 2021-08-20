@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Personalization]">
+  <parameter name="url" value="https://www.mid-day.com/Resources/midday/rss/netcore-web-series.xml"/>
+  <test name="Test(failed)">
+    <parameter name="url" value="https://www.mid-day.com/Resources/midday/rss/netcore-web-series.xml"/>
+    <classes>
+      <class name="com.Personalisation.TestCase.HomePage_TC">
+        <methods>
+          <include name="extentReports"/>
+          <include name="verifyATCOnTransactionCallInPLP"/>
+          <include name="launchTheBrowser"/>
+          <include name="closeTheBrowser"/>
+        </methods>
+      </class> <!-- com.Personalisation.TestCase.HomePage_TC -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Personalization] -->
