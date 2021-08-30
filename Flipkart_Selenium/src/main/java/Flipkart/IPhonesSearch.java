@@ -43,7 +43,7 @@ public class IPhonesSearch extends BasePage{
 		By prodPrice=By.xpath("//div[@class='_30jeq3 _1_WHN1']");
 		
 		//Ratings Xpath matching with multiple element
-		By ratings=By.xpath("//div[@class='_3LWZlK']");
+		By ratings=By.xpath("//span[@class='_2_R_DZ']");
 		
 		//----------------- End Xpath(Locators) ---------------------------
 			
@@ -56,7 +56,7 @@ public class IPhonesSearch extends BasePage{
 
 			// Calling Login Method
 			LoginPage login=new LoginPage(driver);
-			Thread.sleep(2000);
+			
 			login.logIntoFlipKart();
 			
 			
@@ -82,6 +82,10 @@ public class IPhonesSearch extends BasePage{
 				
 				//Getting Multiple webelements in order to retrieve  products Rating
 				List<WebElement> ratings_webElements = driver.findElements(ratings);
+				
+				//Writing into CSV file
+				writer.write("Device Details, Price, Ratings"); 
+				writer.write("\n");
 
 				//Lood for retrieve value of Device Model/Price and Rating.
 				for (int i=0; i<deviceModel_webElements.size();i++)
@@ -91,11 +95,14 @@ public class IPhonesSearch extends BasePage{
 					String price=charRemoveAt(productPrice,0);
 					String price1=charRemoveAt(price,2);
 					
-					int prodPrice=Integer.parseInt(price1); 			
+					int prodPrice=Integer.parseInt(price1); 		
+					
+					String[] rating=ratings_webElements.get(i).getText().split("Ratings");
+					String ratings=rating[0];
 					
 					if(prodPrice<=40000)
 					{
-					String result=deviceModel_webElements.get(i).getText()+", "+ productPrice +", Rating "+ratings_webElements.get(i).getText();
+					String result=deviceModel_webElements.get(i).getText()+", "+ productPrice +", "+ratings;
 					System.out.println(result);
 			      
 					writer.write(result); 

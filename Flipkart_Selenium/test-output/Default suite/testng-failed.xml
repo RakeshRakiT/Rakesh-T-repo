@@ -5,6 +5,7 @@
     <classes>
       <class name="Flipkart.IPhonesSearch">
         <methods>
+          <include name="closeTheBrowser"/>
           <include name="searchIphone"/>
           <include name="launchTheBrowser"/>
         </methods>
