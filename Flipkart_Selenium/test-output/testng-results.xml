@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="62110" started-at="2021-08-30T03:10:21Z" finished-at="2021-08-30T03:11:23Z">
+    <groups>
+      <group name="Sanity">
+        <method signature="IPhonesSearch.searchIphone()[pri:0, instance:Flipkart.IPhonesSearch@482f8f11]" name="searchIphone" class="Flipkart.IPhonesSearch"/>
+      </group> <!-- Sanity -->
+    </groups>
+    <test name="Default test" duration-ms="62110" started-at="2021-08-30T03:10:21Z" finished-at="2021-08-30T03:11:23Z">
+      <class name="Flipkart.IPhonesSearch">
+        <test-method status="PASS" signature="launchTheBrowser()[pri:0, instance:Flipkart.IPhonesSearch@482f8f11]" name="launchTheBrowser" is-config="true" duration-ms="30725" started-at="2021-08-30T08:40:21Z" finished-at="2021-08-30T08:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchTheBrowser -->
+        <test-method status="PASS" signature="searchIphone()[pri:0, instance:Flipkart.IPhonesSearch@482f8f11]" name="searchIphone" duration-ms="29708" started-at="2021-08-30T08:40:52Z" finished-at="2021-08-30T08:41:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchIphone -->
+        <test-method status="PASS" signature="closeTheBrowser()[pri:0, instance:Flipkart.IPhonesSearch@482f8f11]" name="closeTheBrowser" is-config="true" duration-ms="1637" started-at="2021-08-30T08:41:22Z" finished-at="2021-08-30T08:41:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTheBrowser -->
+      </class> <!-- Flipkart.IPhonesSearch -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

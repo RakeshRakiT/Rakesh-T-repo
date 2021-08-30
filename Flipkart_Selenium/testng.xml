@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Personalization">
+  <test  name="Test">
+  
+  <!-- <parameter name="browser" value="chrome"/> -->
+  //<parameter name="url" value="https://www.flipkart.com"/> 
+  
+    <classes>
+      <class name="Flipkart.IPhonesSearch">
+      		<methods>
+      		<include name="searchIphone"></include>
+     		</methods> 
+      </class>	
+    </classes>	
+  </test> 
+  </suite>

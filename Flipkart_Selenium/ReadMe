@@ -1,0 +1,35 @@
+
+Instructions
+
+1. Need to change Webdriver specific path in BasePage Class.
+
+In my Case
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\rakesh\\Desktop\\Driver\\chromedriver_win32\\chromedriver.exe");
+
+2. Need to change CSV file path inside IPhonesSearch Class
+In My case
+
+writer = new FileWriter ("C:\\Users\\rakesh\\Desktop\\SeleniumResult\\result.csv");
+
+
+Required software’s
+
+1.	Java JDK 1.8
+2.	TestNG
+3.	Selenium
+
+
+
+Maven dependencies
+<dependency>
+    <groupId>org.testng</groupId>
+  <artifactId>testng</artifactId>
+  <version>6.8</version>
+  <scope>test</scope>
+</dependency>
+
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>3.141.59</version>
+    </dependency>
